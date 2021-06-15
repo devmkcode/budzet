@@ -1,0 +1,56 @@
+input {
+  background: #fff;
+  width: 100%;
+  max-width: 200px;
+  padding: 0.7rem 0;
+  margin-right: 0.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+input:disabled {
+  background: #fff;
+}
+input,
+button {
+  outline: none;
+  border: none;
+}
+button {
+  padding: 0.7rem;
+  border-radius: 10px;
+}
+button i {
+  color: #fff;
+  font-size: 1rem;
+}
+.add-btn {
+  background: linear-gradient(
+    to bottom right,
+    hsl(200, 70%, 30%),
+    hsl(200, 70%, 70%)
+  );
+}
+.edit-btn {
+  background: linear-gradient(
+    to bottom right,
+    hsl(225, 70%, 50%),
+    hsl(225, 70%, 70%)
+  );
+}
+.remove-btn {
+  background: linear-gradient(
+    to bottom right,
+    hsl(354, 70%, 50%),
+    hsl(354, 70%, 70%)
+  );
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}

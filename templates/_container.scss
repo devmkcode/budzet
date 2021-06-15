@@ -1,0 +1,74 @@
+.container {
+  width: 100%;
+  padding-bottom: 2rem;
+  background: #ddd;
+  h3 {
+    padding: 1rem;
+  }
+  .cost {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    padding: 0.5rem 1rem;
+  }
+  .inputs-wrap {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 0.5rem;
+    .rest-per-cost {
+      width: 100%;
+    }
+    .outgo-title {
+      max-width: 100%;
+      color: #101010;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+    .outgo-currency {
+      max-width: calc(50% - 1.5rem);
+      position: relative;
+      text-align: right;
+      font-size: 13px;
+      input {
+        padding-right: 2ch;
+      }
+      &:first-of-type {
+        margin-right: 1rem;
+      }
+      &:first-of-type::before {
+        content: "Limit";
+        font-size: 10px;
+        left: 0;
+        top: -5px;
+        position: absolute;
+      }
+      &:last-of-type::before {
+        content: "Wydane";
+        font-size: 10px;
+        left: 0;
+        top: -5px;
+        position: absolute;
+      }
+      &::after {
+        content: "zł";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+      }
+    }
+  }
+  .buttons-wrap {
+    gap: 0.5rem;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+  }
+}

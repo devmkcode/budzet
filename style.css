@@ -1,0 +1,266 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap);
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background: #4d33cc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+main {
+  background: #fff;
+  width: calc(100vw - 2rem);
+  margin: 1rem auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.result {
+  padding: 1rem;
+}
+
+.rest-cost {
+  padding: 1rem;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+input {
+  background: #fff;
+  width: 100%;
+  max-width: 200px;
+  padding: 0.7rem 0;
+  margin-right: 0.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+input:disabled {
+  background: #fff;
+}
+
+input,
+button {
+  outline: none;
+  border: none;
+}
+
+button {
+  padding: 0.7rem;
+  border-radius: 10px;
+}
+
+button i {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.add-btn {
+  background: -webkit-gradient(linear, left top, right bottom, from(#175e82), to(#7dc4e8));
+  background: linear-gradient(to bottom right, #175e82, #7dc4e8);
+}
+
+.edit-btn {
+  background: -webkit-gradient(linear, left top, right bottom, from(#2653d9), to(#7d98e8));
+  background: linear-gradient(to bottom right, #2653d9, #7d98e8);
+}
+
+.remove-btn {
+  background: -webkit-gradient(linear, left top, right bottom, from(#d92638), to(#e87d88));
+  background: linear-gradient(to bottom right, #d92638, #e87d88);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.earnHandler {
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1rem;
+}
+
+.earnHandler input {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.outgoHandler {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.outgoHandler h3 {
+  margin-bottom: 1rem;
+}
+
+.outgoHandler .outgoInputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.outgoHandler .outgoInputs .outgoName {
+  max-width: 75%;
+}
+
+.outgoHandler .outgoInputs .outgoLimit {
+  max-width: 25%;
+}
+
+.outgoHandler input {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  width: 100%;
+  padding-bottom: 2rem;
+  background: #ddd;
+}
+
+.container h3 {
+  padding: 1rem;
+}
+
+.container .cost {
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+  padding: 0.5rem 1rem;
+}
+
+.container .inputs-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80%;
+  gap: 0.5rem;
+}
+
+.container .inputs-wrap .rest-per-cost {
+  width: 100%;
+}
+
+.container .inputs-wrap .outgo-title {
+  max-width: 100%;
+  color: #101010;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.container .inputs-wrap .outgo-currency {
+  max-width: calc(50% - 1.5rem);
+  position: relative;
+  text-align: right;
+  font-size: 13px;
+}
+
+.container .inputs-wrap .outgo-currency input {
+  padding-right: 2ch;
+}
+
+.container .inputs-wrap .outgo-currency:first-of-type {
+  margin-right: 1rem;
+}
+
+.container .inputs-wrap .outgo-currency:first-of-type::before {
+  content: "Limit";
+  font-size: 10px;
+  left: 0;
+  top: -5px;
+  position: absolute;
+}
+
+.container .inputs-wrap .outgo-currency:last-of-type::before {
+  content: "Wydane";
+  font-size: 10px;
+  left: 0;
+  top: -5px;
+  position: absolute;
+}
+
+.container .inputs-wrap .outgo-currency::after {
+  content: "zł";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.container .buttons-wrap {
+  gap: 0.5rem;
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+}
+/*# sourceMappingURL=style.css.map */
