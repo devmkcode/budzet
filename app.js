@@ -66,7 +66,7 @@ class item{
 
     	const edit = document.createElement('button');
     	edit.classList.add('edit-btn');
-    	edit.innerHTML = '<i class="far fa-edit"></i>';
+    	edit.innerHTML = '<i class="fas fa-pencil-alt"></i>';
     	edit.addEventListener('click', (e) => {
         e.preventDefault();
         this.edit(inputCost, name);

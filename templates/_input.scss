@@ -20,7 +20,8 @@ button {
 }
 button i {
   color: #fff;
-  font-size: 1rem;
+  font-size: 13px;
+  user-select: none;
 }
 .add-btn {
   background: linear-gradient(
@@ -53,4 +54,11 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type="number"] {
   -moz-appearance: textfield;
+}
+/* Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
 }

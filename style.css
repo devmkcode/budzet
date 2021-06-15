@@ -68,7 +68,11 @@ button {
 
 button i {
   color: #fff;
-  font-size: 1rem;
+  font-size: 13px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .add-btn {
@@ -96,6 +100,14 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type="number"] {
   -moz-appearance: textfield;
+}
+
+/* Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
 
 .earnHandler {
@@ -159,11 +171,12 @@ input[type="number"] {
 .container {
   width: 100%;
   padding-bottom: 2rem;
-  background: #ddd;
+  background: #856ef7;
 }
 
 .container h3 {
   padding: 1rem;
+  color: #fff;
 }
 
 .container .cost {
@@ -181,6 +194,8 @@ input[type="number"] {
   padding: 0.5rem 1rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
 }
 
 .container .cost .rest-per-cost {
@@ -215,8 +230,9 @@ input[type="number"] {
 .container .inputs-wrap .outgo-title {
   max-width: 100%;
   color: #101010;
-  font-weight: 600;
-  text-transform: capitalize;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 .container .inputs-wrap .outgo-currency {
