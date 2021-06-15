@@ -16,7 +16,7 @@ if(window.localStorage.getItem("money") == undefined){
   window.localStorage.setItem("money", JSON.stringify(money));
 }
 if(window.localStorage.getItem("outgo") == undefined){
-  const outgo = [];
+  outgo = [];
   window.localStorage.setItem("outgo", JSON.stringify(outgo));
 }
 
