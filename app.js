@@ -9,14 +9,14 @@ let outgoLimit = document.querySelector(".outgoLimit");
 let restCost = document.querySelector('.rest-cost');
 // LocalStorage
 let money = parseInt(JSON.parse(window.localStorage.getItem("money")));
-const outgo = JSON.parse(window.localStorage.getItem("outgo"));
+let outgo = JSON.parse(window.localStorage.getItem("outgo"));
 
 if(window.localStorage.getItem("money") == undefined){
   money = 0;
   window.localStorage.setItem("money", JSON.stringify(money));
 }
 if(window.localStorage.getItem("outgo") == undefined){
-  const outgo = [];
+  outgo = [];
   window.localStorage.setItem("outgo", JSON.stringify(outgo));
 }
 
@@ -131,7 +131,6 @@ earnForm.addEventListener('submit', (e) => {
   let calc = parseInt(earn.value);
   e.preventDefault();
   money += calc;
-  console.log(money);
   result.innerHTML = "<h2>Pieniądze " + money + "zł</h2>";
   window.localStorage.setItem("money", JSON.stringify(money));
   earn.value = "";

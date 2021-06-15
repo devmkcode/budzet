@@ -9,35 +9,29 @@
 }
 
 body {
-  width: 100vw;
-  min-height: 100vh;
-  background: #4d33cc;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  background: #eee;
 }
 
 main {
-  background: #fff;
-  width: calc(100vw - 2rem);
-  margin: 1rem auto;
+  width: 100vw;
   border-radius: 10px;
-  -webkit-box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+  margin: 0.5rem 0;
 }
 
 .result {
-  padding: 1rem;
+  padding: 1rem 0.5rem 0 0.5rem;
+  margin: 0 0.5rem;
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background: #fff;
+  font-size: 15px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .rest-cost {
-  padding: 1rem;
+  padding: 0.5rem;
   font-size: 14px;
   font-weight: 600;
 }
@@ -111,7 +105,6 @@ input:-webkit-autofill:active {
 }
 
 .earnHandler {
-  margin-bottom: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -121,7 +114,15 @@ input:-webkit-autofill:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 1rem;
+  padding: 0 0.5rem 1rem 0.5rem;
+  margin: 0 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  background: #fff;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .earnHandler input {
@@ -136,12 +137,21 @@ input:-webkit-autofill:active {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 2rem;
-  padding: 0 1rem;
+  margin: 0 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.8rem 0.5rem 1rem 0.5rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  background: #fff;
 }
 
 .outgoHandler h3 {
-  margin-bottom: 1rem;
+  margin-bottom: 0.3rem;
+  font-size: 15px;
+  color: #101010;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 .outgoHandler .outgoInputs {
@@ -168,19 +178,16 @@ input:-webkit-autofill:active {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.container {
-  width: 100%;
-  padding-bottom: 2rem;
-  background: #856ef7;
-}
-
 .container h3 {
-  padding: 1rem;
-  color: #fff;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
 }
 
 .container .cost {
-  margin-bottom: 1rem;
+  margin: 0 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -191,11 +198,11 @@ input:-webkit-autofill:active {
       -ms-flex-align: center;
           align-items: center;
   background: #fff;
-  padding: 0.5rem 1rem;
+  padding: 0 0.5rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .container .cost .rest-per-cost {
@@ -204,7 +211,6 @@ input:-webkit-autofill:active {
   border-top: 1px solid #ddd;
   padding: 0.5rem 0;
   font-size: 13px;
-  margin-top: 0.4rem;
 }
 
 .container .inputs-wrap {
@@ -220,7 +226,7 @@ input:-webkit-autofill:active {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 80%;
-  gap: 0.5rem;
+  gap: 0.1rem;
 }
 
 .container .inputs-wrap .rest-per-cost {
@@ -276,7 +282,8 @@ input:-webkit-autofill:active {
 }
 
 .container .buttons-wrap {
-  gap: 0.5rem;
+  padding: 0.3rem;
+  gap: 0.1rem;
   width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
