@@ -12,6 +12,14 @@
     align-items: center;
     background: #fff;
     padding: 0.5rem 1rem;
+    flex-wrap: wrap;
+    .rest-per-cost {
+      flex-basis: 100%;
+      border-top: 1px solid #ddd;
+      padding: 0.5rem 0;
+      font-size: 13px;
+      margin-top: 0.4rem;
+    }
   }
   .inputs-wrap {
     display: flex;
@@ -47,7 +55,7 @@
         top: -5px;
         position: absolute;
       }
-      &:last-of-type::before {
+      &:nth-of-type(2)::before {
         content: "Wydane";
         font-size: 10px;
         left: 0;

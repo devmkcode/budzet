@@ -48,6 +48,12 @@ class item{
       const currencyLimit = document.createElement('div');
       currencyLimit.classList.add('outgo-currency');
 
+      const restPerCost = document.createElement('div');
+      restPerCost.classList.add('rest-per-cost');
+      restPerCost.textContent = "Reszta z " + name.toLowerCase() + ": ";
+      restPerCost.textContent += limit - cost;
+      restPerCost.textContent += "zł";
+
       const inputNumber = document.createElement('input');
     	inputNumber.type = "number";
       inputNumber.disabled = true;
@@ -79,6 +85,7 @@ class item{
     	container.appendChild(itemBox);
         itemBox.appendChild(inputsWrap);
         itemBox.appendChild(buttonsWrap);
+        itemBox.appendChild(restPerCost);
         inputsWrap.appendChild(input);
         inputsWrap.appendChild(currencyLimit);
         inputsWrap.appendChild(currencyCost);

@@ -179,6 +179,17 @@ input[type="number"] {
           align-items: center;
   background: #fff;
   padding: 0.5rem 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .cost .rest-per-cost {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  border-top: 1px solid #ddd;
+  padding: 0.5rem 0;
+  font-size: 13px;
+  margin-top: 0.4rem;
 }
 
 .container .inputs-wrap {
@@ -231,7 +242,7 @@ input[type="number"] {
   position: absolute;
 }
 
-.container .inputs-wrap .outgo-currency:last-of-type::before {
+.container .inputs-wrap .outgo-currency:nth-of-type(2)::before {
   content: "Wydane";
   font-size: 10px;
   left: 0;
