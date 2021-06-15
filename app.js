@@ -140,12 +140,19 @@ earnForm.addEventListener('submit', (e) => {
 
 outgoForm.addEventListener('submit', () => {
   if(outgoName.value != "" && outgoLimit.value != ""){
+      const checkDuplicate = false;
+      for(let i=0; i<outgo.length; i++){
+        if(outgo[i].name.toLowerCase() == outgoName.value.toLowerCase()){
+          alert('Taka kategoria już istnieje!');
+          checkDuplicate = true;
+        }
+      }
       if(outgoLimit.value > money){
-          alert('Nie masz już tyle pieniędzy');
+          alert('Nie masz już tyle pieniędzy!');
           outgoName.value = "";
           outgoLimit.value = "";
       }
-      else{
+      else if(checkDuplicate == false){
       new item(outgoName.value, outgoLimit.value);
         let obj = {
           name: outgoName.value,
