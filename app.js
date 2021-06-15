@@ -66,7 +66,7 @@ class item{
 
     	const edit = document.createElement('button');
     	edit.classList.add('edit-btn');
-    	edit.innerHTML = '<i class="fas fa-pencil-alt"></i>';
+    	edit.innerHTML = '<i class="fas fa-pencil-alt"></i>'; 
     	edit.addEventListener('click', (e) => {
         e.preventDefault();
         this.edit(inputCost, name);
@@ -107,6 +107,8 @@ class item{
             if(inputCost.value !== ""){
               outgo[i].cost = parseInt(inputCost.value) + outgo[i].cost ;
               window.localStorage.setItem("outgo", JSON.stringify(outgo));
+              window.location.reload();
+            }else{
               window.location.reload();
             }
           }
